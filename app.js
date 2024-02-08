@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://melvinpoulose06:melvinpml4151@cluster0.yshbagz.mongodb.net/movieDb?retryWrites=true&w=majority",{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://melvinpoulose06:melvinpml4151@cluster0.yshbagz.mongodb.net/movieListDb?retryWrites=true&w=majority",{useNewUrlParser:true})
 
 app.use("/api/movie", movieRoute)
 
